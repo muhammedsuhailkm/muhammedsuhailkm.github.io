@@ -200,10 +200,10 @@ const getCurrentIcon = () =>
 
 if (selectedTheme) {
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
-    darkTheme
+    darkTheme,
   );
   themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
-    iconTheme
+    iconTheme,
   );
 }
 
@@ -219,11 +219,7 @@ themeButton.addEventListener("click", () => {
 
 // Typing Animation using Typed JS
 var typed = new Typed(".type", {
-  strings: [
-    "a Software Developer",
-    "a Competitive Coder",
-    "a Blockchain Enthusiast",
-  ],
+  strings: ["a Software Developer", "a Competitive Coder", "a Data Enthusiast"],
   smartBackspace: true,
   startDelay: 1000,
   typeSpeed: 100,
