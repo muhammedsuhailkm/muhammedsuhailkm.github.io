@@ -2,139 +2,57 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>404 - Muhammed suhail</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/img/favicon.ico"
-      type="image/x-icon"
-    />
+    <title>Page not found · Muhammed Suhail</title>
+    <link rel="icon" href="/assets/img/favicon.ico?v=3" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" />
+    <style>
+      :root {
+        --bg: #f3f0f1; --ink: #1c1318; --muted: #6b5d64; --line: #d9d0d4;
+        --accent: #8a1538; --accent-strong: #6f0f2c; --on-accent: #fdf6f8;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #150e11; --ink: #f2eaed; --muted: #ab9aa2; --line: #35272e;
+          --accent: #e8668d; --accent-strong: #f08aa8; --on-accent: #1a0a10;
+          color-scheme: dark;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0; min-height: 100vh; display: grid; align-items: center;
+        background: var(--bg); color: var(--ink);
+        font: 1.0625rem/1.6 "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+        padding: 48px max(20px, env(safe-area-inset-right, 0px)) 48px max(20px, env(safe-area-inset-left, 0px));
+      }
+      main { width: 100%; max-width: 1120px; margin-inline: auto; }
+      .mono { font: 0.8125rem/1.6 "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; color: var(--muted); overflow-wrap: anywhere; }
+      .mono b { color: var(--accent); font-weight: 500; }
+      h1 {
+        margin: 12px 0 0; color: var(--accent);
+        font: 800 clamp(4.5rem, 20vw, 12rem)/0.9 "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+        letter-spacing: -0.04em;
+      }
+      p.lead { margin: 20px 0 28px; max-width: 30em; color: var(--muted); font-size: 1.1875rem; }
+      a.btn {
+        display: inline-block; padding: 13px 20px; border-radius: 6px;
+        background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 500;
+      }
+      a.btn:hover { background: var(--accent-strong); }
+      a.btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    </style>
   </head>
-
   <body>
-    <!-- Header -->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav_logo">Suhail</a>
-
-        <div class="nav_menu" id="nav-menu">
-          <ul class="nav_list grid">
-            <li class="nav_item">
-              <a href="./index.html#home" class="nav_link">
-                <i class="uil uil-estate nav_icon"></i> Home
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="./index.html#about" class="nav_link">
-                <i class="uil uil-user nav_icon"></i> About
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="./index.html#skills" class="nav_link">
-                <i class="uil uil-file-alt nav_icon"></i> Skills
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="./index.html#qualification" class="nav_link">
-                <i class="uil uil-graduation-cap nav_icon"></i> Qualifications
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="./index.html#projects" class="nav_link">
-                <i class="uil uil-scenery nav_icon"></i> Projects
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="./index.html#contact" class="nav_link">
-                <i class="uil uil-message nav-icon nav_icon"></i> Contact Me
-              </a>
-            </li>
-          </ul>
-          <i class="uil uil-times nav_close" id="nav-close"></i>
-        </div>
-
-        <div class="nav_btns">
-          <!-- Change Theme -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-          <div class="nav_toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Main -->
-    <main class="main">
-      <section class="home section" id="home">
-        <div class="container">
-          <h1>:(</h1>
-          <br />
-          <h2>
-            A <span>404</span> error occured! Page not found, check the URL and
-            try again.
-          </h2>
-          <br /><br />
-          <h3>
-            <a class="nav_link" href="./index.html">Return to home</a><br /><a
-              class="nav_link"
-              href="javascript:history.back()"
-              >Go Back</a
-            >
-          </h3>
-        </div>
-      </section>
+    <main>
+      <p class="mono">GET <span id="path">/this-page</span> → <b>404 Not Found</b></p>
+      <h1>404</h1>
+      <p class="lead">This route doesn't exist. The link may be old, or the address has a typo.</p>
+      <a class="btn" href="/">Go to the home page →</a>
     </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer_bg">
-        <div class="footer_container container grid">
-          <div>
-            <h1 class="footer_title">Muhammed Suhail</h1>
-            <span class="footer_subtitle">Full Stack Developer</span>
-          </div>
-
-          <ul class="footer_links">
-            <li>
-              <a href="./index.html#about" class="footer_link">About</a>
-            </li>
-            <li>
-              <a href="./index.html#projects" class="footer_link">Projects</a>
-            </li>
-            <li>
-              <a href="./index.html#contact" class="footer_link">Contact Me</a>
-            </li>
-          </ul>
-
-          <div class="footer_socials">
-            <a
-              href="https://www.linkedin.com/in/muhammedsuhailkm/"
-              target="_blank"
-              class="footer_social"
-            >
-              <i class="uil uil-linkedin-alt"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/suhail_1_1/"
-              target="_blank"
-              class="footer_social"
-            >
-              <i class="uil uil-instagram"></i>
-            </a>
-          </div>
-        </div>
-
-        <p class="footer_copy">&#169; Muhammed Suhail. All rights reserved</p>
-      </div>
-    </footer>
-
-    <script src="./assets/js/404-error.js"></script>
+    <script>
+      document.getElementById("path").textContent = location.pathname;
+    </script>
   </body>
 </html>

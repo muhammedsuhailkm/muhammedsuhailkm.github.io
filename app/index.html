@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammed Suhail · Backend Developer in Doha</title>
+    <meta name="description" content="Muhammed Suhail is a backend developer in Doha, Qatar, building ERP modules, REST APIs and full-stack apps with Node.js, .NET, Next.js, MSSQL and MongoDB." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Muhammed Suhail · Backend Developer" />
+    <meta property="og:url" content="https://muhammedsuhailkm.github.io/" />
+    <meta property="og:description" content="Backend developer in Doha, Qatar. ERP modules, REST APIs and full-stack apps with Node.js, .NET, Next.js, MSSQL and MongoDB." />
+    <meta property="og:image" content="https://muhammedsuhailkm.github.io/assets/img/portrait.webp" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#8a1538" />
+    <script>
+      (function () {
+        var saved = null;
+        try { saved = localStorage.getItem("theme"); } catch (e) {}
+        var dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
