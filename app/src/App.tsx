@@ -102,14 +102,14 @@ function Hero() {
         <div>
           <p className="eyebrow mono rise">
             <span className="dot" aria-hidden="true" />
-            Backend developer · {profile.location}
+            Software engineer · {profile.location}
           </p>
           <h1 className="rise d1">
             <span>Muhammed</span>
             <span className="accent">Suhail</span>
           </h1>
           <p className="lead rise d2">
-            I build the parts of software people rely on without seeing: <strong>ERP modules, payroll integrations and REST APIs</strong>, with FastAPI, Node.js, .NET and PostgreSQL.
+            Software engineer, mainly backend. I build <strong>ERP modules, payroll integrations and REST APIs</strong> in Python, TypeScript and C#. Currently upskilling in <strong>agentic AI development</strong>.
           </p>
           <div className="hero-actions rise d3">
             <Button asChild size="lg" className="h-12 px-6 text-base">
