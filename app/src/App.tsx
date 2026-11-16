@@ -109,7 +109,7 @@ function Hero() {
             <span className="accent">Suhail</span>
           </h1>
           <p className="lead rise d2">
-            Software engineer, mainly backend. I build <strong>ERP modules, payroll integrations and REST APIs</strong> in Python, TypeScript and C#. Currently upskilling in <strong>agentic AI development</strong>.
+            Software engineer, mainly backend. I design and build <strong>scalable APIs and reliable server-side systems</strong> in Python, TypeScript and C#. Currently upskilling in <strong>agentic AI development</strong>.
           </p>
           <div className="hero-actions rise d3">
             <Button asChild size="lg" className="h-12 px-6 text-base">
