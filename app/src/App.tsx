@@ -165,14 +165,15 @@ function Hero() {
               {"\n  "}
               <span className="k">"stack"</span>
               <span className="p">: [</span>
-              {profile.stack.map((s, i) => (
-                <span key={s}>
-                  {"\n    "}
-                  <span className="s">"{s}"</span>
-                  {i < profile.stack.length - 1 && <span className="p">,</span>}
-                </span>
-              ))}
-              {"\n  "}
+              <span className="stack-items">
+                {profile.stack.map((s, i) => (
+                  <span key={s}>
+                    <span className="s">"{s}"</span>
+                    {i < profile.stack.length - 1 && <span className="p">, </span>}
+                  </span>
+                ))}
+              </span>
+              {"  "}
               <span className="p">]</span>
               {"\n"}
               <span className="p">{"}"}</span>

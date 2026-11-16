@@ -201,11 +201,11 @@ h1, h2, h3, p, dl, dd { margin: 0; }
 
 /* ---------- Hero ---------- */
 
-.hero { padding-block: clamp(48px, 8vw, 96px) clamp(40px, 6vw, 72px); }
+.hero { padding-block: clamp(40px, 6vw, 72px) clamp(40px, 6vw, 64px); }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
   gap: clamp(32px, 5vw, 72px);
   align-items: center;
 }
@@ -267,24 +267,25 @@ h1, h2, h3, p, dl, dd { margin: 0; }
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid var(--line);
-  max-width: 440px;
+  max-width: 370px;
   width: 100%;
   justify-self: end;
 }
 
 .portrait {
   background: #d5d6d8;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 5 / 4;
   overflow: hidden;
 }
 .portrait img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 14%;
+  object-position: 50% 27%;
 }
 
-.response { padding: 16px 18px 20px; }
+.response { padding: 14px 16px 16px; }
+.stack-items { display: block; padding-left: 4ch; }
 
 .response-line {
   display: flex;
@@ -612,7 +613,7 @@ a.row .go { color: var(--accent); font-family: var(--font-mono); font-size: 0.81
 @media (max-width: 900px) {
   :root { --rail: 1fr; }
   .hero-grid { grid-template-columns: minmax(0, 1fr); }
-  .card-stack { justify-self: start; max-width: 520px; }
+  .card-stack { justify-self: start; max-width: 420px; }
   .section-grid,
   .now .wrap { grid-template-columns: minmax(0, 1fr); }
   .section-head { position: static; }
