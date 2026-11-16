@@ -12,7 +12,7 @@ export const profile = {
   github: "https://github.com/muhammedsuhailkm",
   cv: "./CV-MuhammedSuhail.pdf",
   formEndpoint: "https://formspree.io/f/meepyzwd",
-  stack: ["Node.js", ".NET", "Next.js", "MSSQL", "MongoDB"],
+  stack: ["FastAPI", "PostgreSQL", "Node.js", ".NET", "Next.js", "MSSQL", "MongoDB"],
 }
 
 export const nav = [
@@ -28,12 +28,12 @@ export const skills = [
   {
     group: "Backend development",
     note: "API design, debugging, scalable backend solutions",
-    items: [".NET", "C#", "Node.js", "Express.js", "FastAPI", "Python", "C"],
+    items: ["FastAPI", "Python", "Node.js", "Express.js", ".NET", "C#", "C"],
   },
   {
     group: "Database management",
     note: "Schema design, queries, data modeling",
-    items: ["SQL", "MySQL", "MSSQL", "MongoDB"],
+    items: ["PostgreSQL", "SQL", "MySQL", "MSSQL", "MongoDB"],
   },
   {
     group: "Frontend",
@@ -90,6 +90,16 @@ export const jobs = [
 
 export const projects = [
   {
+    name: "SalesPal",
+    kind: "Sales management platform · Multi-role",
+    text: "A sales operations platform for companies with field sales teams. Admins, managers, salesmen and accountants each get their own dashboard. It tracks clients and onboarding, enquiries and follow-ups, orders and payments, shipping rates, tasks, and salesman KPIs and targets, with a leaderboard, conversion funnel and monthly trends on the overview.",
+    flow: ["Next.js", "REST API routes", "Prisma", "PostgreSQL"],
+    image: "./assets/img/salespal.webp",
+    alt: "SalesPal admin overview with a salesman leaderboard, task health, conversion funnel and monthly onboarding trend",
+    link: "https://github.com/muhammedsuhailkm/salespal",
+    featured: true,
+  },
+  {
     name: "Hulool CRM",
     kind: "Full-stack CRM · In production",
     text: "A CRM for Hulool Travel Agency that manages customers, bookings, and services. Responsive UI over a RESTful backend, deployed for production use.",
@@ -97,6 +107,7 @@ export const projects = [
     image: "./assets/img/hulool-crm.webp",
     alt: "Hulool CRM customer list with status filters and destination tags",
     link: "https://github.com/muhammedsuhailkm/crm-saas",
+    featured: false,
   },
   {
     name: "Hulool Website",
@@ -106,6 +117,7 @@ export const projects = [
     image: "./assets/img/hulool-website.webp",
     alt: "Hulool travel website home page with the headline Explore beyond the ordinary",
     link: "https://github.com/muhammedsuhailkm/hulool-website",
+    featured: false,
   },
   {
     name: "SmartCareer Recommendation System",
@@ -115,6 +127,7 @@ export const projects = [
     image: null,
     alt: "",
     link: null,
+    featured: false,
   },
   {
     name: "LandVista",
@@ -124,6 +137,7 @@ export const projects = [
     image: null,
     alt: "",
     link: null,
+    featured: false,
   },
 ]
 

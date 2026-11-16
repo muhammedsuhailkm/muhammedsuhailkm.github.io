@@ -109,7 +109,7 @@ function Hero() {
             <span className="accent">Suhail</span>
           </h1>
           <p className="lead rise d2">
-            I build the parts of software people rely on without seeing: <strong>ERP modules, payroll integrations and REST APIs</strong>, with Node.js, .NET, Next.js and SQL.
+            I build the parts of software people rely on without seeing: <strong>ERP modules, payroll integrations and REST APIs</strong>, with FastAPI, Node.js, .NET and PostgreSQL.
           </p>
           <div className="hero-actions rise d3">
             <Button asChild size="lg" className="h-12 px-6 text-base">
@@ -373,7 +373,7 @@ export default function App() {
         <Section id="projects" path="/projects" title="Projects">
           <div className="projects">
             {projects.map((project) => (
-              <article className="project" key={project.name}>
+              <article className={project.featured ? "project featured" : "project"} key={project.name}>
                 {project.image && (
                   <div className="shot">
                     <img src={project.image} alt={project.alt} loading="lazy" width={1280} height={590} />
