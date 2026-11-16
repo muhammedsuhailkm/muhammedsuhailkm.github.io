@@ -405,6 +405,10 @@ h1, h2, h3, p, dl, dd { margin: 0; }
   line-height: 1.4;
 }
 
+.skill-logo { width: 18px; height: 18px; flex: none; object-fit: contain; }
+/* Several brand marks are dark navy or black, so on the dark theme each logo sits on a light tile. */
+.dark img.skill-logo { width: 22px; height: 22px; padding: 3px; border-radius: 4px; background: #e8eef6; }
+
 /* ---------- Experience ---------- */
 
 .timeline { display: grid; gap: 0; }

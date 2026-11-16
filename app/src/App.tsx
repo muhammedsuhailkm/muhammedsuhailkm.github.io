@@ -1,5 +1,5 @@
 import { useEffect, useState, type FormEvent, type ReactNode } from "react"
-import { ArrowRight, ArrowUpRight, Download, Menu, Moon, Sun } from "lucide-react"
+import { ArrowRight, ArrowUpRight, Cloud, Database, Download, FileText, Handshake, Menu, Moon, Sun, Users, Workflow, type LucideIcon } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -7,7 +7,27 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Textarea } from "@/components/ui/textarea"
+import { logos } from "@/logos"
 import { certifications, education, jobs, nav, profile, projects, skills } from "@/data"
+
+// Skills without a brand logo get a plain line icon, so every chip has a mark.
+const genericIcons: Record<string, LucideIcon> = {
+  SQL: Database,
+  "CI/CD": Workflow,
+  Cloud: Cloud,
+  "Agile coordination": Users,
+  "Stakeholder management": Handshake,
+  Documentation: FileText,
+}
+
+function SkillIcon({ name }: { name: string }) {
+  const logo = logos[name]
+  if (logo) {
+    return <img src={logo.src} alt="" width={18} height={18} className="skill-logo" />
+  }
+  const Icon = genericIcons[name]
+  return Icon ? <Icon className="skill-logo text-muted-foreground" aria-hidden="true" /> : null
+}
 
 function useActiveSection() {
   const [active, setActive] = useState("")
@@ -338,7 +358,8 @@ export default function App() {
                 <ul className="chips">
                   {s.items.map((item) => (
                     <li key={item} className="contents">
-                      <Badge variant="outline" className="rounded bg-card px-2.5 py-1 font-mono text-[0.8125rem] font-normal">
+                      <Badge variant="outline" className="gap-2 rounded bg-card px-2.5 py-1.5 font-mono text-[0.8125rem] font-normal">
+                        <SkillIcon name={item} />
                         {item}
                       </Badge>
                     </li>

@@ -28,7 +28,7 @@ export const skills = [
   {
     group: "Backend development",
     note: "API design, debugging, scalable backend solutions",
-    items: ["FastAPI", "Python", "Node.js", "Express.js", ".NET", "C#", "C"],
+    items: ["Python", "TypeScript", "C#", "C", "FastAPI", "Node.js", "Express.js", ".NET"],
   },
   {
     group: "Database management",
